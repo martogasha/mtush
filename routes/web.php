@@ -47,6 +47,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 //admin routes
 
 Route::get('admin','adminIndexController@index')->name('admin');
+Route::post('adminCreate','adminIndexController@create');
+
 Route::get('Seller','VendorIndexController@index')->name('millan');
 Route::get('createProduct','CreateProductController@index');
 Route::get('createProductAdmin','CreateProductAdminController@index');
