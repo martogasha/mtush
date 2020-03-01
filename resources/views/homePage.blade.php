@@ -12,7 +12,7 @@
                         <a href="{{url('cart')}}" class="site-btn sb-white">ADD TO CART</a>
                     </div>
                 </div>
-                <div class="offer-card text-white" style="height:150px;width:150px">
+                <div class="offer-card text-white" style="height:200px;width:200px">
                     <span>from</span>
                     <h2>400</h2>
                     <p>SHOP NOW</p>
@@ -57,9 +57,7 @@
     </div>
 
 </section>
-
-
-<section class="features-section">
+<section class="features-section"">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 p-0 feature">
@@ -114,7 +112,7 @@
                     <div class="product-item">
                         <div class="pi-pic">
                             <a href="{{url('products',$pic->id)}}">
-                                <img src="{{asset('uploads/employee/'. $pic->image)}}" alt="img" width="300px" height="300px">
+                                <img src="{{asset('uploads/employee/'. $pic->image)}}" alt="img" style="height:300px;width:450px">
                             </a>
                             <div class="pi-links">
                                 <input type="hidden" value="{{$pic->id}}">

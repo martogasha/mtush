@@ -20,6 +20,7 @@ class CreateFrontPagePicturesTable extends Migration
             $table->string('vendor');
             $table->integer('quantity');
             $table->integer('price');
+            $table->integer('location')->nullable();
             $table->mediumText('image');
             $table->mediumText('image1');
             $table->mediumText('image2')->nullable();

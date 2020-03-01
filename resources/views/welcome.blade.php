@@ -111,7 +111,7 @@
                 <div class="product-item">
                     <div class="pi-pic">
                         <a href="{{url('products',$pic->id)}}">
-                            <img src="{{asset('uploads/employee/'. $pic->image)}}" alt="img" width="500px" height="400px">
+                            <img src="{{asset('uploads/employee/'. $pic->image)}}" alt="img" width="100px" height="100px">
                         </a>
                             <div class="pi-links">
                                 <input type="hidden" value="{{$pic->id}}">

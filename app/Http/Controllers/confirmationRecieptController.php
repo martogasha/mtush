@@ -8,6 +8,7 @@ use App\Cart;
 use App\Checkout;
 use App\confirmationReceipt;
 use App\ConfirmationReciept;
+use App\User;
 use Illuminate\Http\Request;
 
 class confirmationRecieptController extends Controller
@@ -27,6 +28,7 @@ class confirmationRecieptController extends Controller
             AvailableOrder::insert($moveItem);
             ConfirmationReciept::insert($moveItem);
         }
+
         $deleteCheckout = Checkout::where('user_id',auth()->user()->id)->delete();
         $deleteCart = Cart::where('user_id',auth()->user()->id)->delete();
 

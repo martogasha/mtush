@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Cart;
 use App\Checkout;
+use App\FrontPagePicture;
 use Hamcrest\Core\IsNull;
 use Illuminate\Http\Request;
 
 class cartController extends Controller
 {
     public function index(){
+        $continueShoppings = FrontPagePicture::all();
         $carts = Cart::all();
         $getTotals = Cart::where('user_id',auth()->user()->id)->get();
         $sum =0;
@@ -20,7 +22,8 @@ class cartController extends Controller
         }
         return view('cart',[
             'carts'=>$carts,
-            'sum'=>$sum
+            'sum'=>$sum,
+            'continueShoppings'=>$continueShoppings
         ]);
     }
     public function cartDelete($id){

@@ -22,6 +22,7 @@ Route::get('searchResults','SearchController@index');
 Route::post('search','SearchController@search');
 Route::get('jacketSearch','SearchController@jacketSearch');
 Route::get('tshirtSearch','SearchController@tshirtSearch');
+Route::post('slider','SliderController@store');
 
 
 Route::resource('checkout','checkoutController');

@@ -14,31 +14,24 @@
                         <div class="col-md-5">
                             <div class="cf-radio-btns address-rb">
                                 <div class="cfr-item">
-                                    <input type="radio" name="pm" id="one">
-                                    <label for="one">Use my regular address</label>
-                                </div>
-                                <div class="cfr-item">
-                                    <input type="radio" name="pm" id="two">
+                                    <input type="radio"  name="pm" value="2" id="two">
                                     <label for="two">Use a different address</label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row address-inputs">
-                        <div class="col-md-12">
-                            <input type="text" placeholder="Address">
-                            <input type="text" placeholder="Address line 2">
-                            <input type="text" placeholder="Country">
+                        <div class="row address-inputs" id="regularAddress">
+                            <div class="col-md-12">
+                                <label>Address</label>
+                                <input type="text" name="address" value="{{$user->address}}" placeholder="{{$user->address}}">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Phone</label>
+                                <input type="text" name="phone" value="{{$user->phone}}" placeholder="{{$user->phone}}">
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <input type="text" placeholder="Zip code">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" placeholder="Phone no.">
-                        </div>
-                    </div>
-                    <div class="cf-title">Delievery Info</div>
-                    <div class="row shipping-btns">
+                        <div class="cf-title">Delievery Info</div>
+                        <div class="row shipping-btns">
                         <div class="col-6">
                             <h4>Standard</h4>
                         </div>
@@ -51,13 +44,13 @@
                             </div>
                         </div>
                         <div class="col-6">
-                            <h4>Next day delievery </h4>
+                            <h4>Outside Nairobi(30km+) delievery </h4>
                         </div>
                         <div class="col-6">
                             <div class="cf-radio-btns">
                                 <div class="cfr-item">
                                     <input type="radio" name="shipping" id="ship-2">
-                                    <label for="ship-2">$3.45</label>
+                                    <label for="ship-2">Ksh:200</label>
                                 </div>
                             </div>
                         </div>
@@ -110,6 +103,8 @@
 
 
     });
+
+
 </script>
 
 @include('Partials._footer')

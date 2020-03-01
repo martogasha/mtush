@@ -16,6 +16,7 @@ class RegisterController extends Controller
         $register->last = $request->input('last');
         $register->phone = $request->input('phone');
         $register->email = $request->input('email');
+        $register->address = $request->input('address');
         $register->role = $request->input('role');
         $register->password = Hash::make($request->input('password'));
         $register->save();

@@ -38,7 +38,11 @@
                         <option value="3">+701</option>
                     </select>
                     <input id="phone" class="form-control" name="phone" placeholder="Phone number" type="text" required>
-                </div> <!-- form-group// -->
+
+                </div>
+                <input id="textarea" class="form-control" name="address" placeholder="Home Address" type="text" required>
+<br>
+                <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-building"></i> </span>
