@@ -1,6 +1,6 @@
 @include('Partials._header')
 @include('auth.flash-message')
-    <div class="card bg-light">
+    <div class="card">
         <article class="card-body mx-auto" style="max-width: 400px;">
             <h4 class="card-title mt-3 text-center">Create Account</h4>
             <p class="text-center">Get started with your free account</p>
@@ -41,7 +41,7 @@
 
                 </div>
                 <input id="textarea" class="form-control" name="address" placeholder="Home Address" type="text" required>
-<br>
+                <br>
                 <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
@@ -53,18 +53,19 @@
 
                     </select>
                 </div> <!-- form-group end.// -->
-                <div class="form-group input-group">
+                <di9v class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                     </div>
                     <input id="password" class="form-control" name="password" placeholder="Create password" type="password" required>
-                </div> <!-- form-group// -->
+                </di9v> <!-- form-group// -->
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                     </div>
                     <input id="password-confirm" class="form-control" name="password_confirmation" placeholder="Repeat password" type="password" required>
                 </div> <!-- form-group// -->
+                <div class="passwordConfirm">Password don't match</div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
                 </div> <!-- form-group// -->
@@ -74,12 +75,11 @@
     </div>
 
 
+
 <!-- card.// -->
 
 <style>
-    .bg-light{
-        background: #0fad00;
-    }
+
 
     .divider-text {
         position: relative;
@@ -111,5 +111,18 @@
         background-color: #42AEEC;
         color: #fff;
     }
+    .passwordConfirm{
+        display: none;
+    }
 </style>
+
+<script>
+    $("#password-confirm").keyup(function() {
+        if ($("#password").val() != $("#password-confirm").val()) {
+            $(".passwordConfirm").fadeIn('slow');
+        } else {
+            $(".passwordConfirm").fadeOut('slow');
+        }
+    });
+</script>
 @include('Partials._footer')

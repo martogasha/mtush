@@ -22,13 +22,10 @@
                     </div>
                     <div class="input-container">
                         <div class="row">
-
                             <select class="mdb-select md form" name="product_type">
-                                <option value="1">Tops</option>
-                                <option value="2">Shoes</option>
-                                <option value="3">Jackets</option>
-                                <option value="4">Tshirt</option>
-
+                                @foreach($products as $product)
+                                <option value="{{$product->id}}">{{$product->name}}</option>
+                                    @endforeach
                             </select>
 
                         </div>
@@ -36,25 +33,25 @@
                         <div class="row">
 					<span class="req-input" >
 						<span class="input-status" data-toggle="tooltip" data-placement="top" title="Input Your First and Last Name."> </span>
-						<input type="text" name="desc" placeholder="Product Name">
+						<input type="text" name="desc" placeholder="Product Name" required>
 					</span>
                         </div>
                         <div class="row">
 					<span class="req-input">
 						<span class="input-status" data-toggle="tooltip" data-placement="top" title="Please Input Your Email."> </span>
-						<input type="text"  name="size" placeholder="Product Size">
+						<input type="text"  name="size" placeholder="Product Size" required>
 					</span>
                         </div>
                         <div class="row">
 					<span class="req-input">
 						<span class="input-status" data-toggle="tooltip" data-placement="top" title="Please Input Your Phone Number."> </span>
-						<input type="text" name="price" placeholder="Product Price">
+						<input type="text" name="price" placeholder="Product Price" required>
 					</span>
                         </div>
                         <div class="row">
 					<span class="req-input">
 						<span class="input-status" data-toggle="tooltip" data-placement="top" title="Please Input Your Phone Number."> </span>
-						<input type="text" name="quantity" placeholder="Quantity">
+						<input type="text" name="quantity" placeholder="Quantity" required>
 					</span>
                         </div>
 
@@ -63,16 +60,16 @@
                         <div class="row">
                             <div class="yes">
                             <span class="btn_upload">
-                              <input type="file" id="imag" name="image" title="" class="input-img"/>
+                              <input type="file" id="imag" name="image" title="" class="input-img" required/>
                               Choose Image
                               </span>
                                 <img id="ImgPreview" src="" class="preview1" />
-                                <input type="button" id="removeImage1" value="x" class="btn-rmv1" />
+                                <input type="button" id="removeImage1" value="x" class="btn-rmv1"/>
                             </div>
 
                             <div class="yes">
                             <span class="btn_upload">
-                              <input type="file" id="imag2" name="image1" title="" />
+                              <input type="file" id="imag2" name="image1" title="" required/>
                               Choose Image
                               </span>
                                 <img id="ImgPreview2" src="" class="preview2" />
@@ -81,7 +78,7 @@
 
                             <div class="yes">
                             <span class="btn_upload">
-                              <input type="file" id="imag3" name="image2" title="" />
+                              <input type="file" id="imag3" name="image2" title="" required/>
                               Choose Image
                               </span>
                                 <img id="ImgPreview3" src="" class="preview3" />
@@ -90,7 +87,7 @@
 
                             <div class="yes">
                             <span class="btn_upload">
-                              <input type="file" id="imag4" name="image3" title="" />
+                              <input type="file" id="imag4" name="image3" title="" required/>
                               Choose Image
                               </span>
                                 <img id="ImgPreview4" src="" class="preview4" />
@@ -591,6 +588,8 @@
 
         </style>
         <script>
+
+
             function readURL(input, imgControlName) {
                 if (input.files && input.files[0]) {
                     var reader = new FileReader();

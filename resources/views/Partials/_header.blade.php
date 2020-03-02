@@ -4,7 +4,7 @@
 <!-- Mirrored from colorlib.com/preview/theme/divisima/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jan 2020 13:59:14 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-    <title>Mutumba | Online Shopping</title>
+    <title>Braxlan | Online Shopping</title>
     <meta charset="UTF-8">
     <meta name="description" content=" Divisima | eCommerce Template">
     <meta name="keywords" content="divisima, eCommerce, creative, html">

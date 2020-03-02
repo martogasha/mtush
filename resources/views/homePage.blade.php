@@ -1,62 +1,65 @@
 @include('Partials._header')
 @include('flash-message')
-<section class="hero-section">
-    <div class="hero-slider owl-carousel">
-        <div class="hs-item set-bg" data-setbg="img/bg.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-7 text-white">
-                        <span>New Arrivals</span>
-                        <h2>denim jackets</h2>
-                        <a href="#" class="site-btn sb-line">VIEW</a>
-                        <a href="{{url('cart')}}" class="site-btn sb-white">ADD TO CART</a>
+<div class="col-centered">
+    <section class="hero-section">
+        <div class="hero-slider owl-carousel">
+            <div class="hs-item set-bg" data-setbg="img/bg.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-7 text-white">
+                            <span>New Arrivals</span>
+                            <h2>denim jackets</h2>
+                            <a href="#" class="site-btn sb-line">VIEW</a>
+                            <a href="{{url('cart')}}" class="site-btn sb-white">ADD TO CART</a>
+                        </div>
+                    </div>
+                    <div class="offer-card text-white" style="height:200px;width:200px">
+                        <span>from</span>
+                        <h2>400</h2>
+                        <p>SHOP NOW</p>
                     </div>
                 </div>
-                <div class="offer-card text-white" style="height:200px;width:200px">
-                    <span>from</span>
-                    <h2>400</h2>
-                    <p>SHOP NOW</p>
-                </div>
             </div>
-        </div>
-        <div class="hs-item set-bg" data-setbg="img/bg-2.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-7 text-white">
-                        <span>New Arrivals</span>
-                        <h2>denim jackets</h2>
-                        <a href="#" class="site-btn sb-line">VIEW</a>
-                        <a href="#" class="site-btn sb-white">ADD TO CART</a>
+            <div class="hs-item set-bg" data-setbg="img/bg-2.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-7 text-white">
+                            <span>New Arrivals</span>
+                            <h2>denim jackets</h2>
+                            <a href="#" class="site-btn sb-line">VIEW</a>
+                            <a href="#" class="site-btn sb-white">ADD TO CART</a>
+                        </div>
+                    </div>
+                    <div class="offer-card text-white">
+                        <span>from</span>
+                        <h2>200</h2>
+                        <p>SHOP NOW</p>
                     </div>
                 </div>
-                <div class="offer-card text-white">
-                    <span>from</span>
-                    <h2>200</h2>
-                    <p>SHOP NOW</p>
-                </div>
             </div>
-        </div>
-        <div class="hs-item set-bg" data-setbg="img/bg-2.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-7 text-white">
-                        <span>New Arrivals</span>
-                        <h2>denim jackets</h2>
-                        <a href="#" class="site-btn sb-line">VIEW</a>
-                        <a href="#" class="site-btn sb-white">ADD TO CART</a>
+            <div class="hs-item set-bg" data-setbg="img/bg-2.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-7 text-white">
+                            <span>New Arrivals</span>
+                            <h2>denim jackets</h2>
+                            <a href="#" class="site-btn sb-line">VIEW</a>
+                            <a href="#" class="site-btn sb-white">ADD TO CART</a>
+                        </div>
+                    </div>
+                    <div class="offer-card text-white">
+                        <span>from</span>
+                        <h2>250</h2>
+                        <p>SHOP NOW</p>
                     </div>
                 </div>
-                <div class="offer-card text-white">
-                    <span>from</span>
-                    <h2>250</h2>
-                    <p>SHOP NOW</p>
-                </div>
             </div>
+
         </div>
 
-    </div>
+    </section>
 
-</section>
+</div>
 <section class="features-section"">
     <div class="container-fluid">
         <div class="row">
@@ -86,7 +89,6 @@
             </div>
         </div>
     </div>
-</section>
 <br>
 
 <section class="product-filter-section">

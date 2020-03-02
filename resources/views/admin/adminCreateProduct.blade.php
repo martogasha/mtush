@@ -8,7 +8,7 @@
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<div class="container">
+<div class="content-wrapper">
     <div class="row">
 
         <div class="col-md-4">
