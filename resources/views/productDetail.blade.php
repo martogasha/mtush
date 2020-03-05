@@ -17,8 +17,8 @@
         </div>
         <div class="row">
             <div class="col-lg-6">
-                <div class="product-pic-zoom" style="padding-left: 150px">
-                    <img class="product-big-img" src="{{asset('uploads/employee/'. $desc->image)}}" alt="img" height="300px" width="200px">
+                <div class="product-pic-zoom" style="   padding-left: 150px">
+                    <img class="product-big-img" src="{{asset('uploads/employee/'. $desc->image)}}" alt="img">
                 </div>
                 <div class="product-thumbs" tabindex="1" style="overflow: hidden; outline: none;">
                     <div class="product-thumbs-track">
