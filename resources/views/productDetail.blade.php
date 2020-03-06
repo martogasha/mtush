@@ -148,7 +148,7 @@
             <div class="product-item">
                 <div class="pi-pic">
                     <a href="{{url('products',$productRelated->id)}}">
-                        <img src="{{asset('uploads/employee/'. $productRelated->image)}}" alt="" style="height:300px;width:400px">
+                        <img src="{{asset('uploads/employee/'. $productRelated->image)}}" alt="">
 
                     </a>
                     <div class="pi-links">
