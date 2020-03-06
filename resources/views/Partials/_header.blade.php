@@ -47,7 +47,7 @@
                 <div     class="col-lg-2 text-center text-lg-left">
 
                     <a href="{{url('/')}}" class="site-logo">
-                        <img src="{{asset('img/brax.png')}}" alt="">
+                        <img src="{{asset('img/braxs.jpeg')}}" alt="">
                     </a>
                 </div>
                 <div class="col-xl-6 col-lg-5">
@@ -86,7 +86,7 @@
                             <div class="up-item">
                                     <div class="dropdown show">
                                         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            {{auth()->user()->first}} {{auth()->user()->last}}
+                                            {{auth()->user()->first}}
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                             <a class="dropdown-item" href="#">My Profile</a>
